@@ -2,7 +2,7 @@ package br.com.peteshop.DAO;
 
 import java.util.List;
 
-import br.peteshop.modelo.Animal;
+import br.com.petshop.modelo.Animal;
 
 public interface AnimalDAO {
 
