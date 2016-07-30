@@ -27,29 +27,39 @@ CREATE TABLE `animal` (
   `id_tipo_animal` int(11) DEFAULT NULL,
   PRIMARY KEY (`animal_id`),
   KEY `id_dono` (`id_dono`),
-  KEY `id_tipo_animal` (`id_tipo_animal`),
-  CONSTRAINT `animal_ibfk_1` FOREIGN KEY (`id_dono`) REFERENCES `cliente` (`Cliente_id`),
-  CONSTRAINT `animal_ibfk_2` FOREIGN KEY (`id_tipo_animal`) REFERENCES `tipo_animal` (`tipo_animal_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  KEY `id_tipo_animal` (`id_tipo_animal`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 /*Data for the table `animal` */
+
+insert  into `animal`(`animal_id`,`nome`,`id_dono`,`id_tipo_animal`) values 
+(1,'Bidu',1,1),
+(2,'Toto',2,1),
+(3,'Zeus',3,2),
+(4,'Piu Piu',1,3),
+(5,'Garfild',4,2),
+(6,'Tom',2,2),
+(7,'Manda Chuva',1,2),
+(8,'Pluto',5,1),
+(9,'Zé Carioca',6,3),
+(10,'Coçadinha',5,2);
 
 /*Table structure for table `cliente` */
 
 DROP TABLE IF EXISTS `cliente`;
 
 CREATE TABLE `cliente` (
-  `Cliente_id` int(11) NOT NULL AUTO_INCREMENT,
+  `cliente_id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) DEFAULT NULL,
   `cpf` varchar(11) DEFAULT NULL,
   `telefone` varchar(15) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`Cliente_id`)
+  PRIMARY KEY (`cliente_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 /*Data for the table `cliente` */
 
-insert  into `cliente`(`Cliente_id`,`nome`,`cpf`,`telefone`,`email`) values 
+insert  into `cliente`(`cliente_id`,`nome`,`cpf`,`telefone`,`email`) values 
 (1,'Maria Jose','42363548723','8132556253','maria.jose@gmail.com'),
 (2,'Jose Barbosa','54273623611','8133265437','josebarbosa@yahoo.com'),
 (3,'Saulo Candido','64542398721','8123456534','saulo2001@hotmai.com'),
