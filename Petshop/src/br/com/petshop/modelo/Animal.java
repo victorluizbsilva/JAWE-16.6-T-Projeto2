@@ -2,35 +2,34 @@ package br.com.petshop.modelo;
 
 public class Animal {
 
-	private Integer animal_id;
+	private Integer animalId;
 	private String nomeAnimal;
-	private Integer id_dono;
-	private Integer id_tipo_animal;
-	
-	public Integer getAnimal_id() {
-		return animal_id;
-	}
-	public void setAnimal_id(Integer animal_id) {
-		this.animal_id = animal_id;
-	}
-	public String getNomeAnimal() {
-		return nomeAnimal;
-	}
-	public void setNomeAnimal(String nomeAnimal) {
-		this.nomeAnimal = nomeAnimal;
-	}
-	public Integer getId_dono() {
-		return id_dono;
-	}
-	public void setId_dono(Integer id_dono) {
-		this.id_dono = id_dono;
-	}
-	public Integer getId_tipo_animal() {
-		return id_tipo_animal;
-	}
-	public void setId_tipo_animal(Integer id_tipo_animal) {
-		this.id_tipo_animal = id_tipo_animal;
-	}
-	
+	private Integer idDono;
+	private Integer idAnimal;
+		
+		public Integer getAnimalId() {
+			return animalId;
+		}
+		public void setAnimalId(Integer animalId) {
+			this.animalId = animalId;
+		}
+		public String getNomeAnimal() {
+			return nomeAnimal;
+		}
+		public void setNomeAnimal(String nomeAnimal) {
+			this.nomeAnimal = nomeAnimal;
+		}
+		public Integer getIdDono() {
+			return idDono;
+		}
+		public void setIdDono(Integer idDono) {
+			this.idDono = idDono;
+		}
+		public Integer getIdAnimal() {
+			return idAnimal;
+		}
+		public void setIdAnimal(Integer idAnimal) {
+			this.idAnimal = idAnimal;
+		}
 	
 }

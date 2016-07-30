@@ -2,18 +2,17 @@ package br.com.petshop.modelo;
 
 public class Cliente {
 
-	private Integer cliente_id;
+	private Integer clienteId;
 	private String nomeCliente;
 	private String cpfCliente;
 	private String telefoneCliente;
 	private String emailCliente;
 	
-	
-	public Integer getCliente_id() {
-		return cliente_id;
+	public Integer getClienteId() {
+		return clienteId;
 	}
-	public void setCliente_id(Integer cliente_id) {
-		this.cliente_id = cliente_id;
+	public void setClienteId(Integer clienteId) {
+		this.clienteId = clienteId;
 	}
 	public String getNomeCliente() {
 		return nomeCliente;
@@ -39,7 +38,6 @@ public class Cliente {
 	public void setEmailCliente(String emailCliente) {
 		this.emailCliente = emailCliente;
 	}
+	
 
-	
-	
 }

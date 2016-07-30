@@ -2,15 +2,13 @@ package br.com.petshop.modelo;
 
 public class TipoAnimal {
 
-	Integer tipo_animal_id;
+	Integer tipoAnimalId;
 	Integer tipoDoAnimal;
-	
-	
-	public Integer getTipo_animal_id() {
-		return tipo_animal_id;
+	public Integer getTipoAnimalId() {
+		return tipoAnimalId;
 	}
-	public void setTipo_animal_id(Integer tipo_animal_id) {
-		this.tipo_animal_id = tipo_animal_id;
+	public void setTipoAnimalId(Integer tipoAnimalId) {
+		this.tipoAnimalId = tipoAnimalId;
 	}
 	public Integer getTipoDoAnimal() {
 		return tipoDoAnimal;
@@ -19,5 +17,7 @@ public class TipoAnimal {
 		this.tipoDoAnimal = tipoDoAnimal;
 	}
 	
+	
+
 	
 }
