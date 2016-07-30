@@ -10,4 +10,5 @@ public interface TipoAnimalDAO {
 	public TipoAnimal busca (Integer idTipoAnimal);
 	public List<TipoAnimal> buscaTodos ();
 	
+	
 }
