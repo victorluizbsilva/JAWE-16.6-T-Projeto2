@@ -1,6 +1,6 @@
 package br.com.petshop.modelo;
 
-public class Cliente {
+public class Pessoa {
 
 	private Integer clienteId;
 	private String nomeCliente;

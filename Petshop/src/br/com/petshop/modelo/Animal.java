@@ -5,8 +5,8 @@ public class Animal {
 	private Integer animalId;
 	private String nomeAnimal;
 	private Integer idDono;
-	private Integer idAnimal;
-		
+	private Integer idTipoAnimal;
+
 		public Integer getAnimalId() {
 			return animalId;
 		}
@@ -25,11 +25,11 @@ public class Animal {
 		public void setIdDono(Integer idDono) {
 			this.idDono = idDono;
 		}
-		public Integer getIdAnimal() {
-			return idAnimal;
+		public Integer getIdTipoAnimal() {
+			return idTipoAnimal;
 		}
-		public void setIdAnimal(Integer idAnimal) {
-			this.idAnimal = idAnimal;
+		public void setIdTipoAnimal(Integer idAnimal) {
+			this.idTipoAnimal = idAnimal;
 		}
 	
 }
